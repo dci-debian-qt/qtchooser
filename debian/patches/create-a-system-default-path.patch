@@ -1,0 +1,70 @@
+From 3451e47a279e6810b91b48fb2ea7c9a3e8e08b5e Mon Sep 17 00:00:00 2001
+From: Sune Vuorela <sune@vuorela.dk>
+Date: Sat, 29 Dec 2012 23:56:27 +0100
+Subject: create a system default path
+
+Make it possible to build qtchooser with a system default search path
+
+build using make QTCHOOSER_GLOBAL_DIR=/usr/share/ will make qtchooser
+fall back to search in /usr/share/qtchooser/ as a last option
+
+Change-Id: Ie0d438ddc1e259d4c5fb70aa332bd6bfef2448e5
+
+Origin: upstream, https://codereview.qt-project.org/#change,44027
+Last-Update: 2013-01-06
+---
+ src/qtchooser/Makefile |    8 ++++++--
+ src/qtchooser/main.cpp |    6 +++++-
+ 2 files changed, 11 insertions(+), 3 deletions(-)
+
+diff --git a/src/qtchooser/Makefile b/src/qtchooser/Makefile
+index fcff0ce..6ad619a 100644
+--- a/src/qtchooser/Makefile
++++ b/src/qtchooser/Makefile
+@@ -17,6 +17,10 @@ TARGET        = qtchooser
+ OBJECTS_TEST  = main-test.o
+ TARGET_TEST   = qtchooser-test
+ 
++ifneq ($(QTCHOOSER_GLOBAL_DIR),)
++	QTCHOOSER_GLOBAL_DIR_VAR:=-DQTCHOOSER_GLOBAL_DIR=\"$(QTCHOOSER_GLOBAL_DIR)\"
++endif
++
+ first: all
+ check: $(TARGET_TEST)
+ 
+@@ -48,10 +52,10 @@ uninstall:
+ ####### Compile
+ 
+ main.o: main.cpp
+-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o main.o main.cpp
++	$(CXX) -c $(QTCHOOSER_GLOBAL_DIR_VAR) $(CXXFLAGS) $(INCPATH) -o main.o main.cpp
+ 
+ main-test.o: main.cpp
+-	$(CXX) -c -DQTCHOOSER_TEST_MODE -g $(CXXFLAGS) $(INCPATH) -o main-test.o main.cpp
++	$(CXX) -c -DQTCHOOSER_TEST_MODE $(QTCHOOSER_GLOBAL_DIR_VAR) -g $(CXXFLAGS) $(INCPATH) -o main-test.o main.cpp
+ 
+ ####### Install
+ 
+diff --git a/src/qtchooser/main.cpp b/src/qtchooser/main.cpp
+index 9b7688c..09a536b 100644
+--- a/src/qtchooser/main.cpp
++++ b/src/qtchooser/main.cpp
+@@ -177,10 +177,14 @@ static vector<string> stringSplit(const char *source)
+ vector<string> ToolWrapper::searchPaths() const
+ {
+     vector<string> paths;
++#if defined(QTCHOOSER_GLOBAL_DIR)
++    paths = stringSplit(QTCHOOSER_GLOBAL_DIR);
++#endif
+ 
+     // search the XDG config location directories
+     const char *globalDirs = getenv("XDG_CONFIG_DIRS");
+-    paths = stringSplit(!globalDirs || !*globalDirs ? "/etc/xdg" : globalDirs);
++    vector<string> globalDirsSplit = stringSplit(!globalDirs || !*globalDirs ? "/etc/xdg" : globalDirs);
++    paths.insert(paths.end(),globalDirsSplit.begin(),globalDirsSplit.end());
+ 
+     string localDir;
+     const char *localDirEnv = getenv("XDG_CONFIG_HOME");
+-- 
+1.7.10.4
+
