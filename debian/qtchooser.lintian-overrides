@@ -29,3 +29,5 @@ qtchooser: binary-without-manpage usr/bin/uic
 qtchooser: binary-without-manpage usr/bin/uic3
 qtchooser: binary-without-manpage usr/bin/xmlpatterns
 qtchooser: binary-without-manpage usr/bin/xmlpatternsvalidator
+qtchooser: binary-without-manpage usr/bin/qdoc
+qtchooser: binary-without-manpage usr/bin/qdoc3

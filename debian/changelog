@@ -1,5 +1,9 @@
 qtchooser (0.0.1~git20121229.g8f08405-1) UNRELEASED; urgency=low
 
   * Initial release. (Closes: #696687)
+  * Proposed upstream patch:
+    - create-a-system-default-path.patch
+  * Merged upstream patch:
+    - add_qdoc_and_qdoc3.patch
 
- -- Timo Jyrinki <timo@debian.org>  Wed, 02 Jan 2013 09:13:28 +0000
+ -- Timo Jyrinki <timo@debian.org>  Wed, 06 Feb 2013 12:48:19 +0000
