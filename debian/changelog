@@ -1,4 +1,4 @@
-qtchooser (0.0.1~git20121229.g8f08405-1) UNRELEASED; urgency=low
+qtchooser (26-1) UNRELEASED; urgency=low
 
   * Initial release. (Closes: #696687)
   * Proposed upstream patch:
