@@ -1,0 +1,14 @@
+Index: qtchooser-0.0.1~git20121229.g8f08405/Makefile
+===================================================================
+--- qtchooser-0.0.1~git20121229.g8f08405.orig/Makefile	2013-02-12 10:10:11.000000000 -0500
++++ qtchooser-0.0.1~git20121229.g8f08405/Makefile	2013-02-12 10:24:08.057176403 -0500
+@@ -56,7 +56,8 @@
+ 	-for tool in $(TOOLS); do rm -f "$(INSTALL_ROOT)$(bindir)/$$tool"; done
+ 
+ tests/auto/Makefile: tests/auto/auto.pro
+-	cd tests/auto && qmake -o Makefile auto.pro
++	cd tests/auto && qmake-qt4 -o Makefile auto.pro
++	cd tests/auto/qtchooser && qmake-qt4 -o Makefile qtchooser.pro
+ 
+ check: tests/auto/Makefile
+ 	cd src/qtchooser && $(MAKE) check
