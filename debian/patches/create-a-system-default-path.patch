@@ -23,7 +23,7 @@ index fcff0ce..6ad619a 100644
 +++ b/src/qtchooser/Makefile
 @@ -17,6 +17,10 @@ TARGET        = qtchooser
  OBJECTS_TEST  = main-test.o
- TARGET_TEST   = qtchooser-test
+ TARGET_TEST   = test/qtchooser
  
 +ifneq ($(QTCHOOSER_GLOBAL_DIR),)
 +	QTCHOOSER_GLOBAL_DIR_VAR:=-DQTCHOOSER_GLOBAL_DIR=\"$(QTCHOOSER_GLOBAL_DIR)\"
@@ -32,16 +32,16 @@ index fcff0ce..6ad619a 100644
  first: all
  check: $(TARGET_TEST)
  
-@@ -48,10 +52,10 @@ uninstall:
+@@ -49,10 +53,10 @@ uninstall:
  ####### Compile
  
  main.o: main.cpp
--	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o main.o main.cpp
-+	$(CXX) -c $(QTCHOOSER_GLOBAL_DIR_VAR) $(CXXFLAGS) $(INCPATH) -o main.o main.cpp
+-	$(CXX) -c -Wall -Wextra $(CXXFLAGS) $(INCPATH) -o main.o main.cpp
++	$(CXX) -c -Wall -Wextra $(QTCHOOSER_GLOBAL_DIR_VAR) $(CXXFLAGS) $(INCPATH) -o main.o main.cpp
  
  main-test.o: main.cpp
--	$(CXX) -c -DQTCHOOSER_TEST_MODE -g $(CXXFLAGS) $(INCPATH) -o main-test.o main.cpp
-+	$(CXX) -c -DQTCHOOSER_TEST_MODE $(QTCHOOSER_GLOBAL_DIR_VAR) -g $(CXXFLAGS) $(INCPATH) -o main-test.o main.cpp
+-	$(CXX) -c -Wall -Wextra -DQTCHOOSER_TEST_MODE -g $(CXXFLAGS) $(INCPATH) -o main-test.o main.cpp
++	$(CXX) -c -Wall -Wextra -DQTCHOOSER_TEST_MODE $(QTCHOOSER_GLOBAL_DIR_VAR) -g $(CXXFLAGS) $(INCPATH) -o main-test.o main.cpp
  
  ####### Install
  
