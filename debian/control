@@ -2,7 +2,8 @@ Source: qtchooser
 Section: libdevel
 Priority: extra
 Maintainer: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
-Uploaders: Timo Jyrinki <timo@debian.org>
+Uploaders: Timo Jyrinki <timo@debian.org>,
+  Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>
 Build-Depends: debhelper (>= 9), libqt4-dev
 Standards-Version: 3.9.4
 Homepage: https://qt-project.org/
