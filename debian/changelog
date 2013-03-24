@@ -1,7 +1,8 @@
-qtchooser (26-1) UNRELEASED; urgency=low
+qtchooser (26-1) experimental; urgency=low
 
+  [ Timo Jyrinki ]
   * Initial release. (Closes: #696687)
   * Proposed upstream patch:
     - create-a-system-default-path.patch
 
- -- Timo Jyrinki <timo@debian.org>  Wed, 06 Feb 2013 12:48:19 +0000
+ -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Sun, 24 Mar 2013 13:55:31 -0300
