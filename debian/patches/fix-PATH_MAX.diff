@@ -1,0 +1,21 @@
+Author: Pino Toscano <toscano.pino@tiscali.it>
+Description: Fix build when PATH_MAX is not defined.
+ PATH_MAX is not mandatory in POSIX, and GNU/Hurd does not provide it.
+ As a temporary solution, define it as 4096 if not defined already; a better
+ solution could be using getline as provided in POSIX.1-2008.
+Forwarded: no
+Last-Update: 2013-04-01
+
+--- a/src/qtchooser/main.cpp
++++ b/src/qtchooser/main.cpp
+@@ -74,6 +74,10 @@
+ #  define EXE_SUFFIX ""
+ #endif
+ 
++#ifndef PATH_MAX
++#  define PATH_MAX 4096
++#endif
++
+ using namespace std;
+ 
+ static const char myName[] = "qtchooser" EXE_SUFFIX;
