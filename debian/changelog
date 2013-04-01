@@ -1,6 +1,8 @@
 qtchooser (26-2) UNRELEASED; urgency=low
 
-
+  [ Lisandro Damián Nicanor Pérez Meyer ]
+  * Fix missing BSD-3-clause license missing in debian/copyright. Thanks
+    Ansgar Burchardt for noticing it!
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Mon, 01 Apr 2013 12:07:10 -0300
 
