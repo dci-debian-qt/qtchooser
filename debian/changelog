@@ -1,5 +1,7 @@
 qtchooser (26-3) UNRELEASED; urgency=low
 
+  [ Pino Toscano ]
+  * Add Vcs-Git and Vcs-Browser headers.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sun, 28 Apr 2013 16:31:49 +0200
 
