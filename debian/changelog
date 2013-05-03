@@ -4,6 +4,8 @@ qtchooser (26-3) UNRELEASED; urgency=low
   * Add Vcs-Git and Vcs-Browser headers.
   * Append the CPPFLAGS to the CXXFLAGS, as qtchooser's build system uses only
     the latter.
+  * Export the LDFLAGS as LFLAGS, as qtchooser's build system uses only the
+    latter.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sun, 28 Apr 2013 16:31:49 +0200
 
