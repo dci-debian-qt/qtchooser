@@ -6,6 +6,7 @@ qtchooser (26-3) UNRELEASED; urgency=low
     the latter.
   * Export the LDFLAGS as LFLAGS, as qtchooser's build system uses only the
     latter.
+  * Drop the own copy of qtchooser.1 and use the upstream version.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sun, 28 Apr 2013 16:31:49 +0200
 
