@@ -3,11 +3,13 @@
 export DEB_CXXFLAGS_MAINT_APPEND := $(shell dpkg-buildflags --get CPPFLAGS)
 export LFLAGS := $(shell dpkg-buildflags --get LDFLAGS)
 
+DEB_HOST_MULTIARCH ?= $(shell dpkg-architecture -qDEB_HOST_MULTIARCH)
+
 %:
 	dh $@ 
 
 override_dh_auto_build:
-	make QTCHOOSER_GLOBAL_DIR=/usr/share
+	make QTCHOOSER_GLOBAL_DIR=/usr/share:/usr/lib/$(DEB_HOST_MULTIARCH)
 
 override_dh_auto_install:
 	make install INSTALL_ROOT=$(CURDIR)/debian/qtchooser
