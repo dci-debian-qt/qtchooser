@@ -1,4 +1,4 @@
-qtchooser (26-3) UNRELEASED; urgency=low
+qtchooser (26-3) experimental; urgency=low
 
   [ Pino Toscano ]
   * Add Vcs-Git and Vcs-Browser headers.
@@ -16,9 +16,9 @@ qtchooser (26-3) UNRELEASED; urgency=low
       patch debhelper for this.
     - Tools like qdbus will fallback to the Qt4 version even if qt4-default is
       not installed.
-    Apps wanting to use Qt5's qdbus should explicitely call it with -qt=qt5.
+    Apps wanting to use Qt5's qdbus should explicitly call it with -qt=qt5.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sun, 28 Apr 2013 16:31:49 +0200
+ -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Mon, 13 May 2013 17:20:15 -0300
 
 qtchooser (26-2) experimental; urgency=low
 
