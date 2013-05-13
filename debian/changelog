@@ -9,12 +9,14 @@ qtchooser (26-3) UNRELEASED; urgency=low
   * Drop the own copy of qtchooser.1 and use the upstream version.
 
   [ Lisandro Damián Nicanor Pérez Meyer ]
-  * Add a fallback path to check for a default config. In this way:
+  * Add a three possible paths for configs. In this way:
+    - We can add arch-triplet qualified configs.
+    - We can install arch-specific configs.
     - We avoid FTBFS of Qt4 packages already in the archive without the need to
       patch debhelper for this.
     - Tools like qdbus will fallback to the Qt4 version even if qt4-default is
       not installed.
-    Apps wanting to use Qt5's qdbus should explicetely call it with -qt=qt5.
+    Apps wanting to use Qt5's qdbus should explicitely call it with -qt=qt5.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sun, 28 Apr 2013 16:31:49 +0200
 
