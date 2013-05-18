@@ -1,13 +1,12 @@
-qtchooser (31-1) UNRELEASED; urgency=low
+qtchooser (31-1) experimental; urgency=low
 
-  [ Lisandro Damián Nicanor Pérez Meyer ]
   * New upstream release.
   * Improve debian/watch (Thanks Pino!).
   * Remove patches applied upstream:
     - create-a-system-default-path.patch.
     - fix-PATH_MAX.diff.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sat, 18 May 2013 19:36:35 -0300
+ -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Sat, 18 May 2013 19:50:37 -0300
 
 qtchooser (26-3) experimental; urgency=low
 
