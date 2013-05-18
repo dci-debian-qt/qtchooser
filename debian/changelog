@@ -1,4 +1,4 @@
-qtchooser (31-1) experimental; urgency=low
+qtchooser (31-g980c64c-1) experimental; urgency=low
 
   * New upstream release.
   * Improve debian/watch (Thanks Pino!).
