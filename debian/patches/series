@@ -1,3 +1,2 @@
-create-a-system-default-path.patch
 enable-tests.patch
 fix-PATH_MAX.diff
