@@ -2,6 +2,7 @@ qtchooser (31-1) UNRELEASED; urgency=low
 
   [ Lisandro Damián Nicanor Pérez Meyer ]
   * New upstream release.
+  * Improve debian/watch (Thanks Pino!).
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sat, 18 May 2013 19:36:35 -0300
 
