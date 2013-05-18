@@ -3,7 +3,9 @@ qtchooser (31-1) UNRELEASED; urgency=low
   [ Lisandro Damián Nicanor Pérez Meyer ]
   * New upstream release.
   * Improve debian/watch (Thanks Pino!).
-  * Remove create-a-system-default-path.patch, it has been applied upstream.
+  * Remove patches applied upstream:
+    - create-a-system-default-path.patch.
+    - fix-PATH_MAX.diff.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sat, 18 May 2013 19:36:35 -0300
 
