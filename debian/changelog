@@ -1,6 +1,8 @@
-qtchooser (31-g980c64c-2) UNRELEASED; urgency=low
+qtchooser (31-g980c64c-2) unstable; urgency=low
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Fri, 24 May 2013 11:01:38 -0300
+  * Release to unstable.
+
+ -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Fri, 24 May 2013 11:02:23 -0300
 
 qtchooser (31-g980c64c-1) experimental; urgency=low
 
