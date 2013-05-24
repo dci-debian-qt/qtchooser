@@ -1,3 +1,7 @@
+qtchooser (31-g980c64c-4) UNRELEASED; urgency=low
+
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Fri, 24 May 2013 13:54:57 -0300
+
 qtchooser (31-g980c64c-3) unstable; urgency=low
 
   * Some archs decided to build Qt 4.8.4 before qtchooser, thus making
