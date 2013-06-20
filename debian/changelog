@@ -1,10 +1,9 @@
-qtchooser (31-g980c64c-4) UNRELEASED; urgency=low
+qtchooser (31-g980c64c-4) unstable; urgency=low
 
-  [ Lisandro Damián Nicanor Pérez Meyer ]
-  * Switch back to B-D on libqt4-dev and reenable the tests.
+  * Switch back to B-D on libqt4-dev and re-enable the tests.
     Also add README.source to let people know how to bootstrap qtchooser.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Fri, 24 May 2013 13:54:57 -0300
+ -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Thu, 20 Jun 2013 19:52:42 -0300
 
 qtchooser (31-g980c64c-3) unstable; urgency=low
 
