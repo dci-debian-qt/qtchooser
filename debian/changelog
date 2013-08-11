@@ -1,5 +1,8 @@
 qtchooser (31-g980c64c-5) UNRELEASED; urgency=low
 
+  [ Pino Toscano ]
+  * Raise priority from extra to optional, since it is required by other
+    "optional" packages.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sun, 11 Aug 2013 12:54:15 +0200
 

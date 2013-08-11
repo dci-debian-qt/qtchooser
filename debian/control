@@ -1,6 +1,6 @@
 Source: qtchooser
 Section: libdevel
-Priority: extra
+Priority: optional
 Maintainer: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
 Uploaders: Timo Jyrinki <timo@debian.org>,
   Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>
