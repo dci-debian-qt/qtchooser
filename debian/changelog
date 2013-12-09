@@ -1,4 +1,4 @@
-qtchooser (31-g980c64c-5) UNRELEASED; urgency=low
+qtchooser (31-g980c64c-5) unstable; urgency=low
 
   [ Pino Toscano ]
   * Raise priority from extra to optional, since it is required by other
@@ -10,7 +10,7 @@ qtchooser (31-g980c64c-5) UNRELEASED; urgency=low
     QTCHOOSER_NO_GLOBAL_DIR. This also allows setting XDG_CONFIG_DIRS
     without loosing the distro defined configurations (Closes: #726989).
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sun, 11 Aug 2013 12:54:15 +0200
+ -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Mon, 09 Dec 2013 18:42:33 -0300
 
 qtchooser (31-g980c64c-4) unstable; urgency=low
 
