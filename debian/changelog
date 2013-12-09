@@ -4,6 +4,12 @@ qtchooser (31-g980c64c-5) UNRELEASED; urgency=low
   * Raise priority from extra to optional, since it is required by other
     "optional" packages.
 
+  [ Lisandro Damián Nicanor Pérez Meyer ]
+  * Backport ensure_harcoded_paths_are_found.patch. This patch allows
+    developers to avoid using the distro provided configuration, This also
+    allows setting XDG_CONFIG_DIRS without loosing the distro defined
+    configurations (Closes: #726989).
+
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sun, 11 Aug 2013 12:54:15 +0200
 
 qtchooser (31-g980c64c-4) unstable; urgency=low
