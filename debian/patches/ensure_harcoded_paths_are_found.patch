@@ -1,0 +1,27 @@
+From 3e6fea3d94db12b242e0bf2b3c1c024197a5c695 Mon Sep 17 00:00:00 2001
+From: Sune Vuorela <sune@vuorela.dk>
+Date: Sat, 7 Dec 2013 21:19:50 +0100
+Subject: [PATCH] Always ensure that the hardcoded paths are found
+
+Practice has shown that quite many sets XDG dirs for various purposes
+and that spoils qtchooser finding the distro provided Qt without adding
+like /usr to the XDG dirs variable which kind of kills performance.
+
+Provide a dedicated variable to disable a global installation.
+
+Change-Id: I58953e3b2b3cf43cb67d4c367312e83cfa9ad2b3
+---
+ src/qtchooser/main.cpp | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+--- a/src/qtchooser/main.cpp
++++ b/src/qtchooser/main.cpp
+@@ -280,7 +280,7 @@ vector<string> ToolWrapper::searchPaths(
+     paths.insert(paths.end(), xdgPaths.begin(), xdgPaths.end());
+ 
+ #if defined(QTCHOOSER_GLOBAL_DIR)
+-    if (qgetenv("XDG_CONFIG_DIRS").empty()) {
++    if (qgetenv("QTCHOOSER_NO_GLOBAL_DIR").empty()) {
+         vector<string> globalPaths = stringSplit(QTCHOOSER_GLOBAL_DIR);
+         paths.insert(paths.end(), globalPaths.begin(), globalPaths.end());
+     }
