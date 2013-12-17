@@ -1,3 +1,7 @@
+qtchooser (39-g4717841) UNRELEASED; urgency=low
+
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Tue, 17 Dec 2013 12:15:34 -0300
+
 qtchooser (31-g980c64c-5) unstable; urgency=low
 
   [ Pino Toscano ]
