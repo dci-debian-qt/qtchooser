@@ -12,6 +12,7 @@ Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-kde/qt/qtchooser.git;a=summ
 
 Package: qtchooser
 Architecture: any
+Multi-Arch: foreign
 Depends: ${misc:Depends}, ${shlibs:Depends}
 Breaks: libqt4-dev-bin (<= 4:4.8.4+dfsg-1~),
         qdbus (<= 4:4.8.4+dfsg-1~),

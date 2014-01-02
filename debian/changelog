@@ -1,5 +1,7 @@
 qtchooser (39-g4717841-2) UNRELEASED; urgency=low
 
+  [ Dmitry Shachnev ]
+  * Make qtchooser Multi-Arch: foreign.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Thu, 02 Jan 2014 19:59:45 +0400
 
