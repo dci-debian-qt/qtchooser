@@ -1,0 +1,35 @@
+From 8a3bf5a1cafe65fea0b7ca3e00bee27b2dbad2c4 Mon Sep 17 00:00:00 2001
+From: Andrea Scarpino <scarpino@kde.org>
+Date: Thu, 16 Jan 2014 09:33:43 +0100
+Subject: [PATCH] Add qmlimportscanner, qtpaths
+
+Change-Id: Ibd0829127a246f4a97e46cbaa6d99117f826fc86
+Change-Id: I870bdd0b46c97721356c8cd3fbb8778ff081ff4c
+Reviewed-by: Thiago Macieira <thiago.macieira@intel.com>
+---
+ Makefile | 2 ++
+ 1 file changed, 2 insertions(+)
+
+diff --git a/Makefile b/Makefile
+index bb5b5d1..2b44323 100644
+--- a/Makefile
++++ b/Makefile
+@@ -23,6 +23,7 @@ TOOLS = assistant \
+ 	qml \
+ 	qml1plugindump \
+ 	qmlbundle \
++	qmlimportscanner \
+ 	qmlmin \
+ 	qmlplugindump \
+ 	qmlprofiler \
+@@ -30,6 +31,7 @@ TOOLS = assistant \
+ 	qmltestrunner \
+ 	qmlviewer \
+ 	qtconfig \
++	qtpaths \
+ 	rcc \
+ 	uic \
+ 	uic3 \
+-- 
+1.8.5.3
+
