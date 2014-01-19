@@ -1,4 +1,4 @@
-qtchooser (39-g4717841-2) UNRELEASED; urgency=low
+qtchooser (39-g4717841-2) unstable; urgency=low
 
   [ Dmitry Shachnev ]
   * Make qtchooser Multi-Arch: foreign.
@@ -10,7 +10,7 @@ qtchooser (39-g4717841-2) UNRELEASED; urgency=low
   * Override dh_auto_test and simply run make check. Somehow dh_auto_test is
     not detecting the check rule.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Thu, 02 Jan 2014 19:59:45 +0400
+ -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Sat, 18 Jan 2014 23:18:53 -0300
 
 qtchooser (39-g4717841-1) unstable; urgency=low
 
