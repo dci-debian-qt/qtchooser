@@ -10,11 +10,9 @@ Reviewed-by: Thiago Macieira <thiago.macieira@intel.com>
  Makefile | 2 ++
  1 file changed, 2 insertions(+)
 
-diff --git a/Makefile b/Makefile
-index bb5b5d1..2b44323 100644
 --- a/Makefile
 +++ b/Makefile
-@@ -23,6 +23,7 @@ TOOLS = assistant \
+@@ -22,6 +22,7 @@ TOOLS = assistant \
  	qml \
  	qml1plugindump \
  	qmlbundle \
@@ -22,7 +20,7 @@ index bb5b5d1..2b44323 100644
  	qmlmin \
  	qmlplugindump \
  	qmlprofiler \
-@@ -30,6 +31,7 @@ TOOLS = assistant \
+@@ -29,6 +30,7 @@ TOOLS = assistant \
  	qmltestrunner \
  	qmlviewer \
  	qtconfig \
@@ -30,6 +28,3 @@ index bb5b5d1..2b44323 100644
  	rcc \
  	uic \
  	uic3 \
--- 
-1.8.5.3
-
