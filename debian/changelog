@@ -6,6 +6,7 @@ qtchooser (39-g4717841-2) UNRELEASED; urgency=low
   [ Lisandro Damián Nicanor Pérez Meyer ]
   * Backport Add-qmlimportscanner-qtpaths.patch to support qmlimportscanner
     and qtpaths (Closes: #735599).
+  * Update Standards-Version to 3.9.5, no changes required.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Thu, 02 Jan 2014 19:59:45 +0400
 
