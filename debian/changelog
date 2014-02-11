@@ -1,3 +1,7 @@
+qtchooser (39-g4717841-3) UNRELEASED; urgency=medium
+
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Tue, 11 Feb 2014 13:48:51 -0300
+
 qtchooser (39-g4717841-2) unstable; urgency=low
 
   [ Dmitry Shachnev ]
