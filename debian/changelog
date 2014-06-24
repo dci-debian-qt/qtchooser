@@ -1,3 +1,9 @@
+qtchooser (39-g4717841-3~bpo70+1) wheezy-backports; urgency=medium
+
+  * Rebuild for wheezy-backports.
+
+ -- Jean-Baptiste Rouault <jean-baptiste.rouault@diateam.net>  Fri, 20 Jun 2014 18:39:56 +0200
+
 qtchooser (39-g4717841-3) unstable; urgency=medium
 
   * Add a patch from Daniel Schepler to allow easier bootstraping of qtchooser
