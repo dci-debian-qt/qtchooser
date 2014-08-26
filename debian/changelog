@@ -9,6 +9,7 @@ qtchooser (47-gd2b7997-1) UNRELEASED; urgency=medium
       commented so arm64 and ppc64el don't need to bootstrap it.
       I ran the tests and worked flawlessly, they will get reenabled on the
        next upload.
+    - Do not run the tests for this upload.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Tue, 26 Aug 2014 10:57:17 -0300
 
