@@ -4,9 +4,13 @@ Date:   Wed Mar 13 14:14:07 2013 +0000
 Subject: Enable running tests during the build.
 
 
+---
+ Makefile |    3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
 --- a/Makefile
 +++ b/Makefile
-@@ -65,7 +65,8 @@ uninstall:
+@@ -72,7 +72,8 @@ uninstall:
  	;; esac
  
  tests/auto/Makefile: tests/auto/auto.pro
