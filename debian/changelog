@@ -3,7 +3,8 @@ qtchooser (47-gd2b7997-1) UNRELEASED; urgency=medium
   [ Lisandro Damián Nicanor Pérez Meyer ]
   * New upstream git snapshot.
   * Remove Add-qmlimportscanner-qtpaths.patch, applied upstream.
-  * Refresh enable-tests.patch.
+  * Tests now require Qt5.
+    - Refresh enable-tests.patch to use Qt5.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Tue, 26 Aug 2014 10:57:17 -0300
 

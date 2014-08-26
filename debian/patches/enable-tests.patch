@@ -15,8 +15,8 @@ Subject: Enable running tests during the build.
  
  tests/auto/Makefile: tests/auto/auto.pro
 -	cd tests/auto && qmake -o Makefile auto.pro
-+	cd tests/auto && qmake-qt4 -o Makefile auto.pro
-+	cd tests/auto/qtchooser && qmake-qt4 -o Makefile qtchooser.pro
++	cd tests/auto && qmake-qt5 -o Makefile auto.pro
++	cd tests/auto/qtchooser && qmake-qt5 -o Makefile qtchooser.pro
  
  check: tests/auto/Makefile
  	cd src/qtchooser && $(MAKE) check
