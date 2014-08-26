@@ -7,8 +7,8 @@ qtchooser (47-gd2b7997-1) UNRELEASED; urgency=medium
     - Refresh enable-tests.patch to use Qt5.
     - Build depend upon qtbase5-dev instead of libqt4-dev, but leave it
       commented so arm64 and ppc64el don't need to bootstrap it.
-      I ran the tests and worked flawlessly, they will get reenabled on the
-       next upload.
+      I ran the tests and worked flawlessly, they will get re-enabled on
+      the next upload.
     - Do not run the tests for this upload.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Tue, 26 Aug 2014 10:57:17 -0300
