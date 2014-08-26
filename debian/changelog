@@ -1,3 +1,7 @@
+qtchooser (39-g4717841-4) UNRELEASED; urgency=medium
+
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Tue, 26 Aug 2014 10:57:17 -0300
+
 qtchooser (39-g4717841-3) unstable; urgency=medium
 
   * Add a patch from Daniel Schepler to allow easier bootstraping of qtchooser
