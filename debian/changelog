@@ -1,4 +1,6 @@
-qtchooser (39-g4717841-4) UNRELEASED; urgency=medium
+qtchooser (47-gd2b7997-1) UNRELEASED; urgency=medium
+
+  * New upstream git snapshot.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Tue, 26 Aug 2014 10:57:17 -0300
 
