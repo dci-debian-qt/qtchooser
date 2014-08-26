@@ -1,6 +1,5 @@
-qtchooser (47-gd2b7997-1) UNRELEASED; urgency=medium
+qtchooser (47-gd2b7997-1) unstable; urgency=medium
 
-  [ Lisandro Damián Nicanor Pérez Meyer ]
   * New upstream git snapshot.
   * Remove Add-qmlimportscanner-qtpaths.patch, applied upstream.
   * Tests now require Qt5.
@@ -11,7 +10,7 @@ qtchooser (47-gd2b7997-1) UNRELEASED; urgency=medium
       the next upload.
     - Do not run the tests for this upload.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Tue, 26 Aug 2014 10:57:17 -0300
+ -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Tue, 26 Aug 2014 11:19:39 -0300
 
 qtchooser (39-g4717841-3) unstable; urgency=medium
 
