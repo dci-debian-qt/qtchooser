@@ -1,5 +1,8 @@
 qtchooser (47-gd2b7997-2) UNRELEASED; urgency=medium
 
+  [ Lisandro Damián Nicanor Pérez Meyer ]
+  * Re enable tests.
+
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Fri, 19 Sep 2014 21:44:18 -0300
 
 qtchooser (47-gd2b7997-1) unstable; urgency=medium
