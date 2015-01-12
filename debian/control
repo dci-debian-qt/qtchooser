@@ -40,7 +40,3 @@ Description: Wrapper to select between Qt development binary versions
  The Qt Chooser provides a wrapper to switch between versions of Qt
  development binaries when multiple versions like 4 and 5 are installed
  or local Qt builds are to be used.
- .
- If you wish to use Qt development binaries with the default PATH and
- without special parameters, you need to additionally install either
- qt4-default or qt5-default package to provide the default configuration.
