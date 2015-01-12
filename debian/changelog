@@ -1,3 +1,7 @@
+qtchooser (47-gd2b7997-3) UNRELEASED; urgency=medium
+
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Mon, 12 Jan 2015 11:41:32 -0300
+
 qtchooser (47-gd2b7997-2) unstable; urgency=medium
 
   * Re-enable tests.
