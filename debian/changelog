@@ -4,6 +4,7 @@ qtchooser (52-gae5eeef-1) UNRELEASED; urgency=medium
   * New upstream git snapshot.
   * Do not mention qtx-default packages in the long description. We don't want
     people to use them to build packages.
+  * Refresh enable-tests.patch.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Mon, 12 Jan 2015 11:41:32 -0300
 

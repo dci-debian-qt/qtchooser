@@ -4,7 +4,7 @@ Date:   Wed Mar 13 14:14:07 2013 +0000
 Description: Enable running tests during the build.
  Point to the exact location of Qt5's qmake while building the tests.
  We still don't have qtchooser available ;)
-Last-Update: 2014-09-19
+Last-Update: 2015-02-10
 
 
 ---
@@ -18,11 +18,11 @@ Last-Update: 2014-09-19
  MKDIR  = mkdir -p
  prefix = /usr
  bindir = $(prefix)/bin
-@@ -72,7 +73,8 @@ uninstall:
+@@ -75,7 +76,8 @@ uninstall:
  	;; esac
  
  tests/auto/Makefile: tests/auto/auto.pro
--	cd tests/auto && qmake -o Makefile auto.pro
+-	cd tests/auto && $(QMAKE) -o Makefile auto.pro
 +	cd tests/auto && /usr/lib/$(DEB_HOST_MULTIARCH)/qt5/bin/qmake -o Makefile auto.pro
 +	cd tests/auto/qtchooser && /usr/lib/$(DEB_HOST_MULTIARCH)/qt5/bin/qmake -o Makefile qtchooser.pro
  
