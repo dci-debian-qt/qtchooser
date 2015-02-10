@@ -1,6 +1,7 @@
-qtchooser (47-gd2b7997-3) UNRELEASED; urgency=medium
+qtchooser (52-gae5eeef-1) UNRELEASED; urgency=medium
 
   [ Lisandro Damián Nicanor Pérez Meyer ]
+  * New upstream git snapshot.
   * Do not mention qtx-default packages in the long description. We don't want
     people to use them to build packages.
 
