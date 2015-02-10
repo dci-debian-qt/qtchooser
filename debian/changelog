@@ -1,4 +1,4 @@
-qtchooser (52-gae5eeef-1) unstable; urgency=medium
+qtchooser (52-gae5eeef-1) experimental; urgency=medium
 
   * New upstream git snapshot.
   * Do not mention qtx-default packages in the long description. We don't want
@@ -6,7 +6,7 @@ qtchooser (52-gae5eeef-1) unstable; urgency=medium
   * Refresh enable-tests.patch.
   * Update Standards-Version to 3.9.6, no changes required.
 
- -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Tue, 10 Feb 2015 20:04:48 -0300
+ -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Tue, 10 Feb 2015 20:07:33 -0300
 
 qtchooser (47-gd2b7997-2) unstable; urgency=medium
 
