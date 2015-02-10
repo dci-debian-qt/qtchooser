@@ -5,6 +5,7 @@ qtchooser (52-gae5eeef-1) UNRELEASED; urgency=medium
   * Do not mention qtx-default packages in the long description. We don't want
     people to use them to build packages.
   * Refresh enable-tests.patch.
+  * Update Standards-Version to 3.9.6, no changes required.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Mon, 12 Jan 2015 11:41:32 -0300
 
