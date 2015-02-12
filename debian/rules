@@ -16,5 +16,5 @@ override_dh_auto_install:
 
 override_dh_auto_test:
 ifeq (,$(findstring nocheck,$(DEB_BUILD_OPTIONS)))
-	make check
+	make check QMAKE=/usr/lib/$(DEB_HOST_MULTIARCH)/qt5/bin/qmake
 endif

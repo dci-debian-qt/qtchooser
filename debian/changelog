@@ -1,5 +1,8 @@
 qtchooser (52-gae5eeef-2) UNRELEASED; urgency=medium
 
+  [ Dmitry Shachnev ]
+  * Drop enable-tests.patch, instead just specify path to qmake
+    as a make variable in debian/rules.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Thu, 12 Feb 2015 11:57:40 +0300
 
