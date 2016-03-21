@@ -8,8 +8,8 @@ Build-Depends: debhelper (>= 9),
                qtbase5-dev
 Standards-Version: 3.9.6
 Homepage: https://qt-project.org/
-Vcs-Git: git://anonscm.debian.org/pkg-kde/qt/qtchooser.git
-Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-kde/qt/qtchooser.git;a=summary
+Vcs-Git: https://anonscm.debian.org/git/pkg-kde/qt/qtchooser.git
+Vcs-Browser: https://anonscm.debian.org/cgit/pkg-kde/qt/qtchooser.git
 
 Package: qtchooser
 Architecture: any
