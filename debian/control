@@ -15,24 +15,6 @@ Package: qtchooser
 Architecture: any
 Multi-Arch: foreign
 Depends: ${misc:Depends}, ${shlibs:Depends}
-Breaks: libqt4-dev-bin (<= 4:4.8.4+dfsg-1~),
-        qdbus (<= 4:4.8.4+dfsg-1~),
-        qt4-designer (<= 4:4.8.4+dfsg-1~),
-        qt4-dev-tools (<= 4:4.8.4+dfsg-1~),
-        qt4-linguist-tools (<= 4:4.8.4+dfsg-1~),
-        qt4-qmake (<= 4:4.8.4+dfsg-1~),
-        qt4-qmlviewer (<= 4:4.8.4+dfsg-1~),
-        qt4-qtconfig (<= 4:4.8.4+dfsg-1~),
-        qtcreator (<= 2.6.0)
-Replaces: libqt4-dev-bin (<= 4:4.8.4+dfsg-1~),
-          qdbus (<= 4:4.8.4+dfsg-1~),
-          qt4-designer (<= 4:4.8.4+dfsg-1~),
-          qt4-dev-tools (<= 4:4.8.4+dfsg-1~),
-          qt4-linguist-tools (<= 4:4.8.4+dfsg-1~),
-          qt4-qmake (<= 4:4.8.4+dfsg-1~),
-          qt4-qmlviewer (<= 4:4.8.4+dfsg-1~),
-          qt4-qtconfig (<= 4:4.8.4+dfsg-1~),
-          qtcreator (<= 2.6.0)
 Description: Wrapper to select between Qt development binary versions
  Qt is a cross-platform C++ application framework. Qt's primary feature
  is its rich set of widgets that provide standard GUI functionality.
