@@ -7,6 +7,7 @@ qtchooser (55-gc9562a1-1) UNRELEASED; urgency=medium
   * Use canonical Vcs fields.
   * Bump Standards-Version to 3.9.7, no changes needed.
   * Add myself to Uploaders.
+  * Remove debian/README.source which contained outdated info.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Mon, 21 Mar 2016 20:44:52 +0100
 
