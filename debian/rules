@@ -14,6 +14,18 @@ override_dh_auto_build:
 override_dh_auto_install:
 	make install INSTALL_ROOT=$(CURDIR)/debian/qtchooser
 
+	mkdir -p $(CURDIR)/debian/qtchooser/usr/share/qtchooser
+	mkdir -p $(CURDIR)/debian/qtchooser/usr/lib/$(DEB_HOST_MULTIARCH)/qtchooser
+
+	for ver in 4 5; do \
+		echo "/usr/lib/$(DEB_HOST_MULTIARCH)/qt$${ver}/bin" > $(CURDIR)/debian/qtchooser/usr/share/qtchooser/qt$${ver}-$(DEB_HOST_MULTIARCH).conf; \
+		echo "/usr/lib/$(DEB_HOST_MULTIARCH)" >> $(CURDIR)/debian/qtchooser/usr/share/qtchooser/qt$${ver}-$(DEB_HOST_MULTIARCH).conf; \
+		ln -s /usr/share/qtchooser/qt$${ver}-$(DEB_HOST_MULTIARCH).conf \
+			$(CURDIR)/debian/qtchooser/usr/lib/$(DEB_HOST_MULTIARCH)/qtchooser/$${ver}.conf; \
+		ln -s /usr/share/qtchooser/qt$${ver}-$(DEB_HOST_MULTIARCH).conf \
+			$(CURDIR)/debian/qtchooser/usr/lib/$(DEB_HOST_MULTIARCH)/qtchooser/qt$${ver}.conf; \
+	done
+
 override_dh_auto_test:
 ifeq (,$(findstring nocheck,$(DEB_BUILD_OPTIONS)))
 	make check QMAKE=/usr/lib/$(DEB_HOST_MULTIARCH)/qt5/bin/qmake

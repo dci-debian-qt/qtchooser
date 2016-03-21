@@ -3,6 +3,7 @@ qtchooser (55-gc9562a1-1) UNRELEASED; urgency=medium
   [ Dmitry Shachnev ]
   * New upstream git snapshot.
   * Drop obsolete Breaks/Replaces on pre-Jessie packages.
+  * Ship configuration for Qt 4 and Qt 5 in this package (see #818536).
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Mon, 21 Mar 2016 20:44:52 +0100
 
