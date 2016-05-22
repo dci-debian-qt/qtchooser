@@ -1,4 +1,4 @@
-qtchooser (58-gfab25f1-1) UNRELEASED; urgency=medium
+qtchooser (58-gfab25f1-1) unstable; urgency=medium
 
   [ Dmitry Shachnev ]
   * New upstream git snapshot.
@@ -12,7 +12,7 @@ qtchooser (58-gfab25f1-1) UNRELEASED; urgency=medium
   [ Lisandro Damián Nicanor Pérez Meyer ]
   * New upstream git snapshot.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Mon, 21 Mar 2016 20:44:52 +0100
+ -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Sun, 22 May 2016 11:49:04 -0300
 
 qtchooser (52-gae5eeef-2) unstable; urgency=medium
 
