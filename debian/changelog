@@ -1,4 +1,4 @@
-qtchooser (55-gc9562a1-1) UNRELEASED; urgency=medium
+qtchooser (58-gfab25f1-1) UNRELEASED; urgency=medium
 
   [ Dmitry Shachnev ]
   * New upstream git snapshot.
@@ -8,6 +8,9 @@ qtchooser (55-gc9562a1-1) UNRELEASED; urgency=medium
   * Bump Standards-Version to 3.9.7, no changes needed.
   * Add myself to Uploaders.
   * Remove debian/README.source which contained outdated info.
+
+  [ Lisandro Damián Nicanor Pérez Meyer ]
+  * New upstream git snapshot.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Mon, 21 Mar 2016 20:44:52 +0100
 
