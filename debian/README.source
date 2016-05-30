@@ -1,0 +1,8 @@
+= Bootstrapping qtchooser.
+
+qtchooser build-depends on qtbase5-dev, but qtchooser itself it's needed
+in order to run qmake, so creating a circular build dependency.
+
+Actually qtchooser only needs Qt5 for building it's tests. If you need to
+bootstrap it, simply remove qtbase5-dev as a build dependency and override
+dh_auto_test in debian/rules or add nocheck to DEB_BUILD_OPTIONS.
