@@ -3,6 +3,10 @@ qtchooser (58-gfab25f1-2) UNRELEASED; urgency=medium
   [ Lisandro Damián Nicanor Pérez Meyer ]
   * Reintroduce README.source with updated information for porters.
 
+  [ Dmitry Shachnev ]
+  * Disable qtbase5-dev build-dependency on stage1 profile to break the
+    dependency loop between qtbase-opensource-src and qtchooser.
+
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Mon, 30 May 2016 15:30:59 -0300
 
 qtchooser (58-gfab25f1-1) unstable; urgency=medium
