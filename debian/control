@@ -15,8 +15,8 @@ Package: qtchooser
 Architecture: any
 Multi-Arch: foreign
 Depends: ${misc:Depends}, ${shlibs:Depends}
-Breaks: libqt5core5a (<< 5.5.1+dfsg-17~)
-Replaces: libqt5core5a (<< 5.5.1+dfsg-17~)
+Breaks: libqt5core5a (<< 5.6.1+dfsg-17~)
+Replaces: libqt5core5a (<< 5.6.1+dfsg-17~)
 Description: Wrapper to select between Qt development binary versions
  Qt is a cross-platform C++ application framework. Qt's primary feature
  is its rich set of widgets that provide standard GUI functionality.
