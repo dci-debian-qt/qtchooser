@@ -1,4 +1,4 @@
-qtchooser (63-g13a3d08-1) UNRELEASED; urgency=medium
+qtchooser (63-g13a3d08-1) unstable; urgency=medium
 
   [ Lisandro Damián Nicanor Pérez Meyer ]
   * Add information about bootstrapping to README.Debian.
@@ -9,7 +9,7 @@ qtchooser (63-g13a3d08-1) UNRELEASED; urgency=medium
     dependency loop between qtbase-opensource-src and qtchooser.
   * Bump Standards-Version to 3.9.8, no changes needed.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Mon, 30 May 2016 15:30:59 -0300
+ -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Thu, 10 Nov 2016 12:29:34 -0300
 
 qtchooser (58-gfab25f1-1) unstable; urgency=medium
 
