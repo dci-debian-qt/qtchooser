@@ -1,7 +1,8 @@
-qtchooser (58-gfab25f1-2) UNRELEASED; urgency=medium
+qtchooser (63-g13a3d08-1) UNRELEASED; urgency=medium
 
   [ Lisandro Damián Nicanor Pérez Meyer ]
   * Add information about bootstrapping to README.Debian.
+  * New upstream git snapshot.
 
   [ Dmitry Shachnev ]
   * Disable qtbase5-dev build-dependency on stage1 profile to break the
