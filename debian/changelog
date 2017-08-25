@@ -3,7 +3,7 @@ qtchooser (64-ga1b6736-1) UNRELEASED; urgency=medium
   [ Dmitry Shachnev ]
   * New upstream git snapshot.
   * Split the files in /usr/bin into a separate package qtchooser-bin.
-    Make the main qtchooser package Multi-Arch: same. (Closes: #781226).
+    Make the main qtchooser package Multi-Arch: same (see bug #781226).
     Thanks to Helmut Grohne for the suggestions.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Fri, 25 Aug 2017 16:10:17 +0300
