@@ -27,7 +27,8 @@ Description: wrapper to select between Qt versions — binary files
  development binaries when multiple versions like 4 and 5 are installed
  or local Qt builds are to be used.
  .
- This package contains the executable binary files of Qt Chooser.
+ This package contains the executable binary files of Qt Chooser. Do not
+ install this package directly, use qtchooser instead.
 
 Package: qtchooser
 Architecture: any
@@ -43,4 +44,7 @@ Description: wrapper to select between Qt versions — configuration files
  development binaries when multiple versions like 4 and 5 are installed
  or local Qt builds are to be used.
  .
- This package contains the configuration files for Qt 4 and Qt 5.
+ This is the main Qt Chooser package. After installing it, you should be
+ able to use executables like /usr/bin/qmake and others. Pass ‘-qt4’ or
+ ‘-qt5’ flag to these executables, or export QT_SELECT=4 or QT_SELECT=5
+ environment variable, to explicitly select the Qt version.
