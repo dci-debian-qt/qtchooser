@@ -1,3 +1,10 @@
+qtchooser (64-ga1b6736-1) UNRELEASED; urgency=medium
+
+  [ Dmitry Shachnev ]
+  * New upstream git snapshot.
+
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Fri, 25 Aug 2017 16:10:17 +0300
+
 qtchooser (63-g13a3d08-1) unstable; urgency=medium
 
   [ Lisandro Damián Nicanor Pérez Meyer ]
