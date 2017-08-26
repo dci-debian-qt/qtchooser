@@ -3,13 +3,16 @@
 export DEB_CXXFLAGS_MAINT_APPEND := $(shell dpkg-buildflags --get CPPFLAGS)
 export LFLAGS := $(shell dpkg-buildflags --get LDFLAGS)
 
-DEB_HOST_MULTIARCH ?= $(shell dpkg-architecture -qDEB_HOST_MULTIARCH)
+include /usr/share/dpkg/architecture.mk
+ifeq ($(origin CXX),default)
+	CXX = $(DEB_HOST_GNU_TYPE)-g++
+endif
 
 %:
 	dh $@ 
 
 override_dh_auto_build:
-	make QTCHOOSER_GLOBAL_DIR=/usr/share:/usr/lib/$(DEB_HOST_MULTIARCH):/usr/lib/$(DEB_HOST_MULTIARCH)/qt-default
+	make QTCHOOSER_GLOBAL_DIR=/usr/share:/usr/lib/$(DEB_HOST_MULTIARCH):/usr/lib/$(DEB_HOST_MULTIARCH)/qt-default CXX=$(CXX)
 
 override_dh_auto_install:
 	make install INSTALL_ROOT=$(CURDIR)/debian/tmp
