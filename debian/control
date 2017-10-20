@@ -13,38 +13,16 @@ Homepage: https://qt-project.org/
 Vcs-Git: https://anonscm.debian.org/git/pkg-kde/qt/qtchooser.git
 Vcs-Browser: https://anonscm.debian.org/cgit/pkg-kde/qt/qtchooser.git
 
-Package: qtchooser-bin
+Package: qtchooser
 Architecture: any
 Multi-Arch: foreign
 Depends: ${misc:Depends}, ${shlibs:Depends}
-Breaks: qtchooser (<< 64-ga1b6736-1~)
-Replaces: qtchooser (<< 64-ga1b6736-1~)
-Description: wrapper to select between Qt versions — binary files
- Qt is a cross-platform C++ application framework. Qt's primary feature
- is its rich set of widgets that provide standard GUI functionality.
- .
- The Qt Chooser provides a wrapper to switch between versions of Qt
- development binaries when multiple versions like 4 and 5 are installed
- or local Qt builds are to be used.
- .
- This package contains the executable binary files of Qt Chooser. Do not
- install this package directly, use qtchooser instead.
-
-Package: qtchooser
-Architecture: any
-Multi-Arch: same
-Depends: qtchooser-bin (= ${binary:Version}), ${misc:Depends}
 Breaks: libqt5core5a (<< 5.5.1+dfsg-17~), libqtcore4 (<< 4:4.8.7+dfsg-7~)
 Replaces: libqt5core5a (<< 5.5.1+dfsg-17~), libqtcore4 (<< 4:4.8.7+dfsg-7~)
-Description: wrapper to select between Qt versions — configuration files
+Description: Wrapper to select between Qt development binary versions
  Qt is a cross-platform C++ application framework. Qt's primary feature
  is its rich set of widgets that provide standard GUI functionality.
  .
  The Qt Chooser provides a wrapper to switch between versions of Qt
  development binaries when multiple versions like 4 and 5 are installed
  or local Qt builds are to be used.
- .
- This is the main Qt Chooser package. After installing it, you should be
- able to use executables like /usr/bin/qmake and others. Pass ‘-qt4’ or
- ‘-qt5’ flag to these executables, or export QT_SELECT=4 or QT_SELECT=5
- environment variable, to explicitly select the Qt version.
