@@ -1,13 +1,13 @@
-qtchooser (64-ga1b6736-2) UNRELEASED; urgency=medium
+qtchooser (64-ga1b6736-2) unstable; urgency=medium
 
-  [ Dmitry Shachnev ]
   * Revert the split done in the previous upload. It is not needed with
     our new Qt cross-building approach when we call build architecture
     versions of qmake and other Qt tools.
   * Bump Standards-Version to 4.1.1, no changes needed.
   * Fix order of entries in debian/copyright.
+  * Upload to unstable.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Fri, 20 Oct 2017 14:25:24 +0300
+ -- Dmitry Shachnev <mitya57@debian.org>  Fri, 20 Oct 2017 15:12:46 +0300
 
 qtchooser (64-ga1b6736-1) experimental; urgency=medium
 
