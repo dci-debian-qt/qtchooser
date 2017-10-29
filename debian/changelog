@@ -1,5 +1,8 @@
 qtchooser (64-ga1b6736-3) UNRELEASED; urgency=medium
 
+  [ Dmitry Shachnev ]
+  * Add a patch to fix checking return value of endsWith. This should
+    make -run-tool argument work again with new Qt packages.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sun, 29 Oct 2017 22:29:47 +0300
 
