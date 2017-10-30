@@ -1,10 +1,10 @@
-qtchooser (64-ga1b6736-4) UNRELEASED; urgency=medium
+qtchooser (64-ga1b6736-4) unstable; urgency=medium
 
   [ Dmitry Shachnev ]
   * Update Qt 5 configuration file for the new binaries path (closes: #880159).
     - Add Breaks: against old qtbase5-dev-tools and qttools5-dev-tools versions.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Mon, 30 Oct 2017 13:54:46 +0300
+ -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Mon, 30 Oct 2017 10:12:41 -0300
 
 qtchooser (64-ga1b6736-3) unstable; urgency=medium
 
