@@ -1,5 +1,7 @@
 qtchooser (64-ga1b6736-4) UNRELEASED; urgency=medium
 
+  [ Dmitry Shachnev ]
+  * Update Qt 5 configuration file for the new binaries path (closes: #880159).
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Mon, 30 Oct 2017 13:54:46 +0300
 
