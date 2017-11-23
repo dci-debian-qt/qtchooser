@@ -2,13 +2,13 @@ Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: qtchooser
 Source: http://macieira.org/qtchooser/
 
-Files: scripts/*
-Copyright: 2012 Intel Corporation.
-License: BSD-3-clause
-
 Files: *
 Copyright: 2012 Intel Corporation.
 License: LGPL-2.1 with Digia Qt LGPL exception or GPL-3
+
+Files: scripts/*
+Copyright: 2012 Intel Corporation.
+License: BSD-3-clause
 
 Files: debian/*
 Copyright: 2012 Timo Jyrinki <timo@debian.org>
