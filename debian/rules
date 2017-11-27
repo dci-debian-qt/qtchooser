@@ -20,7 +20,6 @@ override_dh_auto_install:
 	mkdir -p $(CURDIR)/debian/qtchooser/usr/share/qtchooser
 	mkdir -p $(CURDIR)/debian/qtchooser/usr/lib/$(DEB_HOST_MULTIARCH)/qtchooser
 
-	echo "/usr/lib/$(DEB_HOST_MULTIARCH)/qt4/bin" > $(CURDIR)/debian/qtchooser/usr/share/qtchooser/qt4-$(DEB_HOST_MULTIARCH).conf
 	echo "/usr/lib/qt5/bin" > $(CURDIR)/debian/qtchooser/usr/share/qtchooser/qt5-$(DEB_HOST_MULTIARCH).conf
 	for ver in 5; do \
 		echo "/usr/lib/$(DEB_HOST_MULTIARCH)" >> $(CURDIR)/debian/qtchooser/usr/share/qtchooser/qt$${ver}-$(DEB_HOST_MULTIARCH).conf; \
