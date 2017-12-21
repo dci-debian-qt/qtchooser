@@ -1,5 +1,7 @@
 qtchooser (64-ga1b6736-5) UNRELEASED; urgency=medium
 
+  [ Dmitry Shachnev ]
+  * Add Breaks/Replaces against qtchooser-bin (closes: #884823).
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Thu, 21 Dec 2017 23:30:31 +0300
 
