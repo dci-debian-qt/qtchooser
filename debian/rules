@@ -9,7 +9,7 @@ ifeq ($(origin CXX),default)
 endif
 
 %:
-	dh $@ 
+	dh $@
 
 override_dh_auto_build:
 	make QTCHOOSER_GLOBAL_DIR=/usr/share:/usr/lib/$(DEB_HOST_MULTIARCH):/usr/lib/$(DEB_HOST_MULTIARCH)/qt-default CXX=$(CXX)
@@ -33,6 +33,6 @@ override_dh_auto_install:
 override_dh_auto_test:
 ifeq (,$(filter stage1,$(DEB_BUILD_PROFILES)))
 ifeq (,$(findstring nocheck,$(DEB_BUILD_OPTIONS)))
-	make check QMAKE=/usr/lib/$(DEB_HOST_MULTIARCH)/qt5/bin/qmake
+	make check QMAKE=/usr/lib/qt5/bin/qmake
 endif
 endif
