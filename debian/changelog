@@ -5,6 +5,7 @@ qtchooser (64-ga1b6736-5) UNRELEASED; urgency=medium
   * Update debian/copyright.
   * Use non-multiarch location of qmake for running the tests.
   * Update debhelper compat level to 10.
+  * Bump Standards-Version to 4.1.2, no changes needed.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Thu, 21 Dec 2017 23:30:31 +0300
 
