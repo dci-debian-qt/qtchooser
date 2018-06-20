@@ -1,3 +1,13 @@
+qtchooser (64-ga1b6736-5) unstable; urgency=medium
+
+  * Add Breaks/Replaces against qtchooser-bin (closes: #884823).
+  * Update debian/copyright.
+  * Use non-multiarch location of qmake for running the tests.
+  * Update debhelper compat level to 10.
+  * Bump Standards-Version to 4.1.2, no changes needed.
+
+ -- Dmitry Shachnev <mitya57@debian.org>  Fri, 22 Dec 2017 00:00:57 +0300
+
 qtchooser (64-ga1b6736-4) unstable; urgency=medium
 
   [ Dmitry Shachnev ]
