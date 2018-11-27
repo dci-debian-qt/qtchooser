@@ -1,4 +1,4 @@
-qtchooser (66-1) UNRELEASED; urgency=medium
+qtchooser (66-1) unstable; urgency=medium
 
   [ Simon Quigley ]
   * Add my name to Uploaders.
@@ -11,7 +11,7 @@ qtchooser (66-1) UNRELEASED; urgency=medium
   * Bump debhelper compat level to 11.
   * Bump Standards-Version to 4.2.1, no changes needed.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sun, 08 Apr 2018 12:36:47 -0500
+ -- Dmitry Shachnev <mitya57@debian.org>  Tue, 27 Nov 2018 23:22:49 +0300
 
 qtchooser (64-ga1b6736-5) unstable; urgency=medium
 
