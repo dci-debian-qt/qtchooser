@@ -6,7 +6,7 @@ Uploaders: Timo Jyrinki <timo@debian.org>,
            Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>,
            Dmitry Shachnev <mitya57@debian.org>,
            Simon Quigley <tsimonq2@ubuntu.com>
-Build-Depends: debhelper (>= 10),
+Build-Depends: debhelper-compat (= 11),
                dpkg-dev (>= 1.17.14),
                qtbase5-dev (>= 5.9.2+dfsg-3~) <!stage1 !nocheck>
 Standards-Version: 4.1.2

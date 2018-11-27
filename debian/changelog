@@ -8,6 +8,7 @@ qtchooser (66-1) UNRELEASED; urgency=medium
   * Drop fix_endsWith_check.diff, applied upstream.
   * Update Vcs fields for migration to salsa.debian.org.
   * Update debian/watch for the new tarballs location.
+  * Bump debhelper compat level to 11.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sun, 08 Apr 2018 12:36:47 -0500
 
