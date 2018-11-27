@@ -1,9 +1,11 @@
-qtchooser (64-ga1b6736-6) UNRELEASED; urgency=medium
+qtchooser (66-1) UNRELEASED; urgency=medium
 
   [ Simon Quigley ]
   * Add my name to Uploaders.
 
   [ Dmitry Shachnev ]
+  * New upstream release.
+  * Drop fix_endsWith_check.diff, applied upstream.
   * Update Vcs fields for migration to salsa.debian.org.
   * Update debian/watch for the new tarballs location.
 
