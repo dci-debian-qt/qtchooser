@@ -5,6 +5,7 @@ qtchooser (64-ga1b6736-6) UNRELEASED; urgency=medium
 
   [ Dmitry Shachnev ]
   * Update Vcs fields for migration to salsa.debian.org.
+  * Update debian/watch for the new tarballs location.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sun, 08 Apr 2018 12:36:47 -0500
 
